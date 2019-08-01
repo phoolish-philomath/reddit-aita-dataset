@@ -1,0 +1,2 @@
+for file in ./aita_posts_june/*; do tail -n +2 $file > $file; done
+for file in ./aita_posts_[0-3][0-9]_june.csv; do sed -i '1d' ./aita_posts_30_june.csv; done
